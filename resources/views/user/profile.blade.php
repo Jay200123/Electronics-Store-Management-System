@@ -1,45 +1,5 @@
 @extends('layouts.base')
 @section('content')
-<style>
-  .avatar {
-   /* Rounded border */
-    border-radius: 50%;
-    height: 160px;
-    width: 150px;
-  }
-
-    .avatar__image {
-    /* Rounded border */
-   border-radius: 50%;
-
-    /* Take full size */
-    height: 100%;
-   width: 100%;
-   }
-
-   .row{
-        background-color:  #ffffff;
-        border: 5px solid black;
-        width: min(100% - 2rem, 600px);
-        margin-inline: auto;
-    }
-
-    .containers{
-    right: 0;
-    position: fixed;
-    top: 50%;
-    transform: translate(0px, -50%);
-  }
-
-    h3.{
-      text-align: center;
-    }
-
-    .background{
-      background-image: linear-gradient(to left, #ffffe6, #ffbf80);
-    }
-</style>
-
 <body class="background">
 <div class="card-body">
     @if ($errors->any())
